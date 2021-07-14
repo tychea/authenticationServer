@@ -26,7 +26,6 @@ app.use("/users", require("./routes/api/users"));
 app.get("/", (req, res) => {
   res.json({
     message: "Welcome to steven application.",
-    env: process.env.mongoURI,
   });
 });
 
